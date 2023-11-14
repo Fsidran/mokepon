@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Poppins:wght@100&display=swap');
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #041562;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 20px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 100px;
+    background: #114685;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tarjeta-de-mokepon img {
+        width: 80px;
+}
+
+#boton-mascota {
+    font-family: 'Poppins', sans-serif;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-top: 20px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: rgb(31, 142, 161);
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.boton-de-ataque {
+   background-color: #114685;
+   border-radius: 20px;
+   box-sizing: border-box;
+   padding: 10px;
+   border-color: transparent;
+   width: 100px;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+}
+
+#mensajes {
+    display: flex;
+    width: 180px;
+    background: #EEEEEE;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    color: #041562;
+
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+#ver-mapa button {
+    font-family: 'Poppins', sans-serif;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+        #ver-mapa div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }   
+}
